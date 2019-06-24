@@ -31,7 +31,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:hetaojun/cword-web.git',
       path : '/root/workspace/cword-web',
-      'post-deploy' : 'git pull && npm install && pm2 startOrRestart ecosystem.config.js --interpreter babel-node -env production'
+      'post-deploy' : 'git pull && yarn && pm2 start server.js --interpreter ./node_modules/.bin/babel-node'
     },
     dev : {
       user : 'node',

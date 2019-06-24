@@ -36,7 +36,6 @@
     "@babel/runtime": "^7.3.4",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
-    "babel-cli": "^6.26.0",
     "babel-plugin-relay": "^4.0.0",
     "babel-plugin-transform-typescript-metadata": "^0.2.2",
     "eslint": "^5.13.0",
