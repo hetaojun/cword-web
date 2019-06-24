@@ -1,0 +1,12 @@
+{
+  "name": "default",
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "username": "",
+  "password": "",
+  "database": "cword",
+  "entities": [
+    "data/entity/*.js"
+  ]
+}
