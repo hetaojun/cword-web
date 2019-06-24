@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : 'WEB',
-      script    : 'index.js',
+      script    : 'server.js',
       env: {
         COMMON_VARIABLE: 'true'
       },
@@ -29,8 +29,8 @@ module.exports = {
       user : 'root',
       host : '118.190.207.224',
       ref  : 'origin/master',
-      repo : 'git@gitlab.cyberx.com:hetao/cyberx.git',
-      path : '/data/source/workspace',
+      repo : 'git@github.com:hetaojun/cword-web.git',
+      path : '/root/workspace',
       'post-deploy' : 'git pull && npm install && pm2 startOrRestart ecosystem.config.js --interpreter babel-node -env production'
     },
     dev : {
