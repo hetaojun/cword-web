@@ -15,7 +15,7 @@ module.exports = {
       env_production : {
         NODE_ENV: 'production'
       },
-      exec_interpreter: 'babel-node'
+      exec_interpreter: './node_modules/.bin/babel-node'
     }
 
   ],
