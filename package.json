@@ -5,14 +5,18 @@
     "build": "relay-compiler --src ./js/ --schema ./data/schema.graphql --artifactDirectory ./__generated__/relay",
     "flow-typed": "flow-typed install --flowVersion=0.94.0",
     "update-schema": "babel-node ./scripts/updateSchema.js",
-    "lint": "eslint ./ --cache"
+    "lint": "eslint ./ --cache",
+    "web-dev": "NODE_ENV=development node_modules/.bin/webpack-dev-server --config webpack.dev.js",
+    "web-prod": "NODE_ENV=prod node_modules/.bin/webpack --config webpack.prod.js"
   },
   "dependencies": {
     "classnames": "2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
     "graphql-relay": "^0.6.0",
+    "html-webpack-plugin": "^3.2.0",
     "mongodb": "^3.2.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
@@ -49,9 +53,12 @@
     "eslint-plugin-relay": "^1.0.0",
     "flow-bin": "^0.94.0",
     "flow-typed": "^2.5.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prettier": "^1.16.4",
     "relay-compiler": "^4.0.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.2.1"
   },
   "prettier": {
