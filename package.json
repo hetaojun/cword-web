@@ -24,7 +24,7 @@
     "react-relay": "^4.0.0",
     "todomvc-app-css": "^2.2.0",
     "todomvc-common": "^1.0.3",
-    "typeorm": "^0.2.18",
+    "typeorm": "^0.2.25",
     "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
